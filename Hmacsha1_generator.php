@@ -1,6 +1,6 @@
 <?php
-$data = "3287OpmIOPQYGeKqykWP1234";
-$signatureSecretKey = "498fd04868363f0a0c2818ab419b2478";
+$data = "ClientId+sharedkey+Systrace"; //ClientId, SharedKey, systrace
+$signatureSecretKey = "ClientSecret"; //ClientSecret
 $hash = hash_hmac('sha1', $data, $signatureSecretKey, false );
 echo $hash;
 ?>
